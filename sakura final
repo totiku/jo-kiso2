@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+
+	function add(){
+	
+	cb1 = document.form1.box1.checked;
+	cb2 = document.form1.box2.checked;
+	cb3 = document.form1.box3.checked;
+	cb4 = document.form1.box4.checked;
+	cb5 = document.form1.box5.checked;
+	
+	var x=0;
+	if (cb1){ x=x+100;} //ここの数字をカロリーの数字に変更すればいい
+	if (cb2){ x=x+200;}
+	if (cb3){ x=x+300;}
+	if (cb4){ x=x+400;}
+	if (cb5){ x=x+500;}
+	alert("合計"+x+"kcalです");
+}
+    </script>
+</head>
+<body>
+  <form name="form1">
+	<input type="checkbox" name="box1">食べ物の名前：100kcal<br>
+	<input type="checkbox" name="box2">食べ物の名前：200kcal<br>
+	<input type="checkbox" name="box3">食べ物の名前：300kcal<br>
+	<input type="checkbox" name="box4">食べ物の名前：400kcal<br>
+	<input type="checkbox" name="box5">食べ物の名前：500kcal<br>
+  </form>
+  <input type="button" value="計算" onclick="add();">
+</body>
+</html>
